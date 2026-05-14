@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaultday — Your schedule. Only yours.</title>
+  <meta name="description" content="A privacy-first productivity app. Tasks, projects, a day planner, and a karma system — all sealed on your device. No accounts. No cloud. No tracking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#">
+        <span class="logo-mark">🔒</span>
+        <span class="logo-name">Vaultday</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#download">Download</a>
+      </div>
+      <a href="#download" class="nav-cta">Get Vaultday</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Privacy-first · No cloud · No accounts
+      </div>
+      <h1 class="hero-title">Your schedule.<br><em>Only yours.</em></h1>
+      <p class="hero-sub">Most productivity apps are businesses built on your behaviour data. Vaultday isn't. Every task, project, and plan lives only on your device — sealed, private, and fully offline.</p>
+      <div class="hero-actions">
+        <div class="dl-btn coming-soon">
+          <div class="dl-btn-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </div>
+          <div class="dl-btn-text">
+            <span class="dl-small">Coming soon</span>
+            <span class="dl-big">Mac</span>
+          </div>
+        </div>
+        <div class="dl-btn coming-soon">
+          <div class="dl-btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1L20 13.25z"/></svg>
+          </div>
+          <div class="dl-btn-text">
+            <span class="dl-small">Coming soon</span>
+            <span class="dl-big">Windows</span>
+          </div>
+        </div>
+      </div>
+      <p class="hero-note">Free to use · No sign-up required · Works fully offline</p>
+    </div>
+
+    <!-- App mockup -->
+    <div class="mockup-wrap">
+      <div class="mockup-window">
+        <div class="mockup-titlebar">
+          <div class="titlebar-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="titlebar-name">Vaultday</span>
+          <span class="titlebar-seal">● Sealed locally</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-sidebar">
+            <div class="ms-brand">
+              <span class="ms-brandmark"></span>
+              <span>Vaultday</span>
+            </div>
+            <div class="ms-seal">🔒 Sealed locally · no account</div>
+            <div class="ms-section">PLAN</div>
+            <div class="ms-item active">📅 Day</div>
+            <div class="ms-item">🗓 Calendar</div>
+            <div class="ms-item">▦ Board</div>
+            <div class="ms-item">📈 Stats</div>
+            <div class="ms-section">TASKS</div>
+            <div class="ms-item">📌 Today <span class="ms-badge">3</span></div>
+            <div class="ms-item">📆 Upcoming</div>
+            <div class="ms-section">VAULTS</div>
+            <div class="ms-item">
+              <span class="ms-dot" style="background:#e05438"></span> Work
+            </div>
+            <div class="ms-item">
+              <span class="ms-dot" style="background:#8b5cf6"></span> Personal
+            </div>
+            <div class="ms-item active-project">
+              <span class="ms-dot" style="background:#3fb950"></span> Training
+              <span class="ms-badge">4</span>
+            </div>
+            <div class="ms-karma">
+              <div class="ms-karma-row">
+                <span class="ms-karma-pts">2 480</span>
+                <span>🔥 14</span>
+              </div>
+              <div class="ms-karma-bar"><span style="width:68%"></span></div>
+              <div class="ms-karma-lbl">Level 6 · Disciplined</div>
+            </div>
+          </div>
+          <div class="mockup-main">
+            <div class="mockup-header">
+              <div>
+                <div class="mh-title">
+                  <span class="mh-dot" style="background:#3fb950"></span> Training
+                </div>
+                <div class="mh-sub">4 active tasks</div>
+              </div>
+            </div>
+            <div class="mockup-tasks">
+              <!-- Task group -->
+              <div class="mt-group">TODAY</div>
+
+              <!-- Task 1 — expanded with subtasks -->
+              <div class="mt-row mt-expanded-parent">
+                <div class="mt-check checked"></div>
+                <div class="mt-body">
+                  <div class="mt-title done">MON · Push — Chest · Shoulders · Triceps</div>
+                  <div class="mt-meta">
+                    <span class="mt-tag" style="--c:#3fb950">Training</span>
+                    <span class="mt-tag2">push</span>
+                    <button class="mt-toggle expanded">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                      4/4
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Subtasks -->
+              <div class="mt-subtasks">
+                <div class="mt-row subtask">
+                  <div class="mt-check checked"></div>
+                  <div class="mt-body"><div class="mt-title done">Flat Barbell Bench Press — 4×6-8</div></div>
+                </div>
+                <div class="mt-row subtask">
+                  <div class="mt-check checked"></div>
+                  <div class="mt-body"><div class="mt-title done">Incline Dumbbell Press — 4×8-10</div></div>
+                </div>
+                <div class="mt-row subtask">
+                  <div class="mt-check checked"></div>
+                  <div class="mt-body"><div class="mt-title done">Overhead Press — 3×8-10</div></div>
+                </div>
+                <div class="mt-row subtask">
+                  <div class="mt-check checked"></div>
+                  <div class="mt-body"><div class="mt-title done">Tricep Pushdown — 3×12-15</div></div>
+                </div>
+              </div>
+
+              <!-- Task 2 -->
+              <div class="mt-row">
+                <div class="mt-check"></div>
+                <div class="mt-body">
+                  <div class="mt-title">TUE · Pull — Back · Biceps</div>
+                  <div class="mt-meta">
+                    <span class="mt-date">📅 Today</span>
+                    <span class="mt-tag" style="--c:#3fb950">Training</span>
+                    <button class="mt-toggle">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                      0/11
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Task 3 -->
+              <div class="mt-row">
+                <div class="mt-check"></div>
+                <div class="mt-body">
+                  <div class="mt-title">THU · Legs — Quads · Hamstrings</div>
+                  <div class="mt-meta">
+                    <span class="mt-date upcoming">📅 Thu</span>
+                    <span class="mt-tag" style="--c:#3fb950">Training</span>
+                    <button class="mt-toggle">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                      0/13
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY STRIP -->
+  <section class="privacy-strip">
+    <div class="container">
+      <div class="ps-grid">
+        <div class="ps-item reveal-fade" style="--delay:0s">
+          <span class="ps-icon">🔒</span>
+          <span>No accounts ever</span>
+        </div>
+        <div class="ps-divider"></div>
+        <div class="ps-item reveal-fade" style="--delay:0.1s">
+          <span class="ps-icon">📡</span>
+          <span>Zero network requests</span>
+        </div>
+        <div class="ps-divider"></div>
+        <div class="ps-item reveal-fade" style="--delay:0.2s">
+          <span class="ps-icon">🗄️</span>
+          <span>Data stored locally only</span>
+        </div>
+        <div class="ps-divider"></div>
+        <div class="ps-item reveal-fade" style="--delay:0.3s">
+          <span class="ps-icon">✈️</span>
+          <span>Works fully offline</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="phil-inner">
+        <div class="phil-text reveal-left">
+          <div class="section-eyebrow">The Philosophy</div>
+          <h2 class="section-title">Built different,<br>on purpose.</h2>
+          <p>Most productivity apps are free because <em>you're the product.</em> They track what you work on, when you work, what you complete, and how long things take — then use that to train models, serve ads, or sell your data.</p>
+          <p>Vaultday makes the opposite bet. Your tasks never leave your device. There's no server to breach, no account to leak, no company reading your to-do list. Not because we're small — because it's a core design decision we're not willing to trade away.</p>
+          <p>Your plans are yours. Full stop.</p>
+        </div>
+        <div class="phil-card reveal-right">
+          <div class="phil-card-row">
+            <span class="phil-x">✕</span>
+            <div>
+              <div class="phil-row-title">Notion, Todoist, Linear…</div>
+              <div class="phil-row-sub">Your data on their servers. Login required. Internet required. Privacy policy required reading.</div>
+            </div>
+          </div>
+          <div class="phil-divider"></div>
+          <div class="phil-card-row">
+            <span class="phil-check">✓</span>
+            <div>
+              <div class="phil-row-title">Vaultday</div>
+              <div class="phil-row-sub">Your data on your device. No login. Works offline. Privacy is the default, not an upsell.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-eyebrow reveal-fade" style="text-align:center">Features</div>
+      <h2 class="section-title reveal-up" style="text-align:center">Everything you need.<br>Nothing you don't.</h2>
+      <div class="features-grid">
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">✅</div>
+          <h3>Tasks & Subtasks</h3>
+          <p>Quick-add with <kbd>Q</kbd>, full editor with <kbd>N</kbd>. Break any task into subtasks and tick them off one by one with a satisfying progress bar.</p>
+        </div>
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">📁</div>
+          <h3>Projects</h3>
+          <p>Colour-coded projects keep everything organised. Smart views — Today and Upcoming — surface what matters right now across every project.</p>
+        </div>
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">👁️</div>
+          <h3>Four Views</h3>
+          <p>Day planner for your schedule. Calendar for the month. Board for status. Stats for your trends. Switch instantly with a single keystroke.</p>
+        </div>
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">⚡</div>
+          <h3>Karma System</h3>
+          <p>Every completed task earns karma. Build daily streaks and climb from Novice to Iron Will. The system only gives — it never punishes.</p>
+        </div>
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">🗂️</div>
+          <h3>Templates</h3>
+          <p>Start full projects in one click. Hypertrophy training plans, sprint boards, study plans — each with tasks and subtasks already built out.</p>
+        </div>
+
+        <div class="feat-card reveal-up">
+          <div class="feat-icon">⌨️</div>
+          <h3>Keyboard First</h3>
+          <p>Every action has a shortcut. <kbd>Q</kbd> quick-add, <kbd>D</kbd> day view, <kbd>B</kbd> board, <kbd>C</kbd> calendar — stay in flow without touching the mouse.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KARMA SHOWCASE -->
+  <section class="karma-section">
+    <div class="container">
+      <div class="karma-inner">
+        <div class="karma-visual reveal-left">
+          <div class="kv-card">
+            <div class="kv-header">
+              <div>
+                <div class="kv-pts">2,480</div>
+                <div class="kv-lbl">Karma points</div>
+              </div>
+              <div class="kv-streak">
+                <span class="kv-flame">🔥</span>
+                <span class="kv-streak-num">14</span>
+                <span class="kv-streak-lbl">day streak</span>
+              </div>
+            </div>
+            <div class="kv-level-row">
+              <span class="kv-level-name">Level 6 · Disciplined</span>
+              <span class="kv-next">520 pts to Level 7</span>
+            </div>
+            <div class="kv-bar-wrap">
+              <div class="kv-bar"><span class="kv-bar-fill" data-width="68%"></span></div>
+            </div>
+            <div class="kv-ach-grid">
+              <div class="kv-ach unlocked" title="First Win">🏁</div>
+              <div class="kv-ach unlocked" title="3-Day Spark">🔥</div>
+              <div class="kv-ach unlocked" title="Week Warrior">⚡</div>
+              <div class="kv-ach unlocked" title="Centurion">💯</div>
+              <div class="kv-ach unlocked" title="Level Up">🎯</div>
+              <div class="kv-ach locked" title="Iron Will">💪</div>
+              <div class="kv-ach locked" title="???">🔒</div>
+              <div class="kv-ach locked" title="???">🔒</div>
+            </div>
+          </div>
+        </div>
+        <div class="karma-text reveal-right">
+          <div class="section-eyebrow">Karma</div>
+          <h2 class="section-title">Progress that<br>compounds.</h2>
+          <p>Every task you complete earns karma points. Complete tasks daily and your streak grows. Let a day slip and the streak resets — but your points stay. The system rewards momentum without punishing life.</p>
+          <p>Climb from Novice to Iron Will, unlocking achievements along the way. All tracked locally. All yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="download" id="download">
+    <div class="download-glow"></div>
+    <div class="container">
+      <div class="section-eyebrow reveal-fade" style="text-align:center">Download</div>
+      <h2 class="section-title reveal-up" style="text-align:center">Ready when you are.</h2>
+      <p class="dl-sub reveal-up">Native desktop apps for Mac and Windows. No browser, no Electron quirks — fast, local, and always available even without internet.</p>
+      <div class="dl-cards">
+        <div class="dl-card reveal-up">
+          <svg class="dl-card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="dl-card-title">macOS</div>
+          <div class="dl-card-sub">Apple Silicon & Intel</div>
+          <div class="dl-card-coming">Coming soon</div>
+        </div>
+        <div class="dl-card reveal-up" style="--delay:0.1s">
+          <svg class="dl-card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12m17-9v8.75l-10 .15V5.21L20 3M3 13l6 .09v6.81l-6-1.15V13m17 .25V22l-10-1.91V13.1L20 13.25z"/></svg>
+          <div class="dl-card-title">Windows</div>
+          <div class="dl-card-sub">Windows 10 & 11</div>
+          <div class="dl-card-coming">Coming soon</div>
+        </div>
+      </div>
+      <div class="dl-note reveal-fade">
+        <span class="badge-dot" style="background:var(--vault)"></span>
+        No telemetry · No account required · Open source
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner reveal-fade">
+        <div class="footer-brand">
+          <span class="logo-mark">🔒</span>
+          <span class="logo-name">Vaultday</span>
+        </div>
+        <div class="footer-tagline">Your schedule. Only yours.</div>
+        <div class="footer-seal">
+          <span style="color:var(--vault)">●</span> No cloud · No telemetry · No accounts
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Nav scroll ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── Universal scroll-reveal ──
+    // Selects all reveal-* elements. Feat-cards get staggered delays.
+    // Uses IntersectionObserver with animation-delay set from --delay CSS var or stagger index.
+    const REVEAL_SEL = '.reveal-up, .reveal-left, .reveal-right, .reveal-fade';
+    const allReveal = document.querySelectorAll(REVEAL_SEL);
+
+    // Assign stagger to feat-cards relative to their siblings
+    const featCards = document.querySelectorAll('.feat-card');
+    featCards.forEach((card, i) => {
+      if (!card.style.getPropertyValue('--delay')) {
+        card.style.setProperty('--delay', `${i * 0.08}s`);
+      }
+    });
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const delay = getComputedStyle(e.target).getPropertyValue('--delay').trim() || '0s';
+        e.target.style.animationDelay = delay;
+        e.target.classList.add('is-visible');
+        revealObs.unobserve(e.target);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+
+    allReveal.forEach(el => revealObs.observe(el));
+
+    // ── Karma bar: animate width on scroll-into-view ──
+    const kvBarFill = document.querySelector('.kv-bar-fill');
+    if (kvBarFill) {
+      const target = kvBarFill.dataset.width || '68%';
+      kvBarFill.style.width = '0%';
+      const barObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          requestAnimationFrame(() => {
+            kvBarFill.style.transition = 'width 1.5s cubic-bezier(0.16, 1, 0.3, 1)';
+            kvBarFill.style.width = target;
+          });
+          barObs.unobserve(e.target);
+        });
+      }, { threshold: 0.5 });
+      barObs.observe(kvBarFill.closest('.kv-card'));
+    }
+
+    // ── Smooth scroll ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
